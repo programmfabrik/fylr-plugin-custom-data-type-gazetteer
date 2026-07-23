@@ -1,0 +1,46 @@
+// Created Germany (2044274) is the parent of Hamburg.
+[
+    {
+        "name": "created Germany is the parent of Hamburg",
+        "request": {
+            "endpoint": "search",
+            "method": "POST",
+            "body": {
+                "format": "long",
+                "objecttypes": [
+                    "place"
+                ],
+                "search": [
+                    {
+                        "type": "in",
+                        "bool": "must",
+                        "fields": [
+                            "place.gaz_data.gazId"
+                        ],
+                        "in": [
+                            "2044274"
+                        ]
+                    }
+                ]
+            }
+        },
+        "response": {
+            "body": {
+                "count": 1,
+                "objects": [
+                    {
+                        "place": {
+                            "_id": {{ datastore `hamburg_parent_id` }},
+                            "gaz_data": {
+                                "gazId": "2044274"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "store_response_gjson": {
+            "germany_parent_id": "body.objects.0.place._id_parent"
+        }
+    }
+]

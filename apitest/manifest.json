@@ -1,0 +1,49 @@
+//////////////////////////////////////////////////////
+//                                                  //
+//  This apitest only works if plugin zip exists at //
+//  ../../build/custom-data-type-gazetteer.zip      //
+//                                                  //
+//  Run `make zip` before running apitest           //
+//                                                  //
+//  The test does not need access to                //
+//  https://gazetteer.dainst.org. The http_server   //
+//  of apitest serves a downloaded snapshot from    //
+//  gazetteer/search.json, the base config points   //
+//  the plugin at it. The fylr server must be able  //
+//  to reach the apitest host on port 8798.         //
+//                                                  //
+//////////////////////////////////////////////////////
+
+{
+    "name": "custom-data-type-gazetteer",
+    // serves gazetteer/search.json as a dummy for the iDAI.gazetteer
+    "http_server": {
+        "addr": ":8798",
+        "dir": "gazetteer",
+        "testmode": false
+    },
+    "header_from_store": {
+        "Authorization": "root-token"
+    },
+    "store": {
+        "setup_datamodel": {{ file "setup/datamodel.json" | marshal }},
+        "setup_config": {{ file "setup/base-config-fylr.json" | marshal }}
+    },
+    "tests": [
+        // automatic insertion of hierarchical records (db_pre_save callback)
+        "@setup/all.json"
+        // insert into the empty hierarchy, the whole parent chain is created
+        , "@insert_hierarchy.json"
+        , "@check_hierarchy_vietnam.json"
+        , "@check_hierarchy_asia.json"
+        , "@check_hierarchy_world.json"
+        // insert with a partly existing parent chain, existing parents are reused
+        , "@insert_existing_parents.json"
+        , "@check_parents_germany.json"
+        , "@check_parents_europe.json"
+        // a duplicate Gazetteer ID rejects the save
+        , "@insert_duplicate_error.json"
+        // records without a Gazetteer ID and updates are not touched
+        , "@insert_skip.json"
+    ]
+}

@@ -1,0 +1,116 @@
+plugin:
+  name: custom-data-type-gazetteer
+  version: "1"
+  url: https://github.com/programmfabrik/fylr-plugin-custom-data-type-gazetteer
+  l10n: l10n/custom-data-type-gazetteer.csv
+  displayname:
+    de-DE: Gazetteer
+    en-US: Gazetteer
+  info:
+    de-DE: |
+      Stellt einen eigenen Feldtyp bereit, mit dem Datensätze mit Orten des [iDAI.gazetteer](https://gazetteer.dainst.org) verknüpft werden, dem Gazetteer des Deutschen Archäologischen Instituts. Die Suche erfolgt über Ortsname oder Gazetteer-ID; gespeichert wird eine eindeutige Referenz samt Koordinaten und alternativen Namen.
+
+      - Suche im iDAI.gazetteer nach Name oder ID
+      - Automatischer Updater aktualisiert die gespeicherten Daten bei Änderungen im Gazetteer
+      - Kann hierarchische Ortsobjekte automatisch anlegen und einfügen und dabei den Elternbaum des Gazetteers nachbilden sowie fehlende Elternelemente ergänzen
+    en-US: |
+      Adds a custom data type for linking records to places in the [iDAI.gazetteer](https://gazetteer.dainst.org), the gazetteer of the German Archaeological Institute. Editors search by place name or Gazetteer ID and store an authoritative reference including coordinates and alternative names.
+
+      - Search the iDAI.gazetteer by name or ID
+      - Automatic updater refreshes stored data when the gazetteer changes
+      - Can automatically create and insert hierarchical place objects, mirroring the gazetteer's parent tree and filling in missing parents
+  webfrontend:
+    url: custom-data-type-gazetteer.js
+    css: custom-data-type-gazetteer.css
+    logo: image/logo.png
+    l10n: l10n/
+
+base_url_prefix: "webfrontend"
+
+custom_types:
+  gazetteer:
+    mapping:
+      gazId:
+        type: text_oneline
+      displayName:
+        type: text
+    update:
+      exec:
+        service: "node"
+        commands:
+          - prog: "node"
+            stdin:
+              type: "body"
+            stdout:
+              type: "body"
+            args:
+              - type: "value"
+                value: "%_exec.pluginDir%/server/updater/update.js"
+              - type: "value"
+                value: "%info.json%"
+      # The updater needs one search request per batch.
+      timeout: 60
+      batch_size: 100
+      expires_days: 1
+
+# The db_pre_save callback mirrors the gazetteer hierarchy: when a record of
+# the configured objecttype is saved, missing parent records are created over
+# api/v1/db and the record is attached to its direct parent.
+callbacks:
+  db_pre_save:
+    steps:
+      - name: "insert gazetteer hierarchy records"
+        callback: gazetteer_insert
+    callbacks:
+      gazetteer_insert:
+        exec:
+          service: "node"
+          commands:
+            - prog: "node"
+              stdin:
+                type: "body"
+              stdout:
+                type: "body"
+              args:
+                - type: "value"
+                  value: "%_exec.pluginDir%/server/db_pre_save/gazetteer_insert.js"
+
+base_config:
+  - name: gazetteer_api_settings
+    group: gazetteer_plugin
+    parameters:
+      api_url:
+        type: text
+        default: "https://gazetteer.dainst.org"
+        position: 0
+  - name: gazetteer_plugin_settings
+    group: gazetteer_plugin
+    parameters:
+      show_alternative_names:
+        type: bool
+        position: 0
+        default: false
+      show_lat_lng:
+        type: bool
+        position: 1
+        default: false
+      enabled:
+        type: bool
+        position: 2
+        default: false
+      objecttype:
+        type: text
+        position: 3
+        plugin_type: "objecttype"
+      field_from:
+        type: text
+        position: 4
+        plugin_type: "field_from"
+      field_to:
+        type: text
+        position: 5
+        plugin_type: "field_to"
+      on_update:
+        type: bool
+        position: 6
+        default: false

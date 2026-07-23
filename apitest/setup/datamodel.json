@@ -1,0 +1,128 @@
+{
+    "schema": {
+        "version": 1,
+        "based_on_base_version": 1,
+        "max_table_id": 100,
+        "max_column_id": 102,
+        "tables": [
+            {
+                "name": "place",
+                "table_id": 100,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": true,
+                "polyhierarchical": false,
+                "in_main_search": true,
+                "comment": "",
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "gaz_id",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 101,
+                        "custom_settings": {},
+                        "name_localized": null
+                    },
+                    {
+                        "kind": "column",
+                        "name": "gaz_data",
+                        "type": "custom:base.custom-data-type-gazetteer.gazetteer",
+                        "not_null": false,
+                        "column_id": 102,
+                        "custom_settings": {},
+                        "name_localized": null
+                    }
+                ],
+                "foreign_keys": [],
+                "unique_keys": [],
+                "bidirectional": []
+            }
+        ],
+        "type": "user"
+    },
+    "mask": {
+        "type": "user",
+        "version": 1,
+        "based_on_schema_version": 1,
+        "max_mask_id": 1,
+        "masks": [
+            {
+                "name": "place__all_fields",
+                "mask_id": 1,
+                "table_id": 100,
+                "table_name_hint": "place",
+                "is_preferred": true,
+                "hide_in_detail": false,
+                "hide_in_editor": false,
+                "hide_in_print_dialog": false,
+                "standard_numbering": "",
+                "require_comment": "never",
+                "comment": "",
+                "system_fields": {},
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_id": 101,
+                        "column_name_hint": "gaz_id",
+                        "edit": {
+                            "mode": "edit"
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1,
+                                "stop_if_set": false
+                            },
+                            "standard_eas": {},
+                            "standard_geo": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": false,
+                            "nested": false
+                        },
+                        "custom_settings": {},
+                        "inheritance": null
+                    },
+                    {
+                        "kind": "field",
+                        "column_id": 102,
+                        "column_name_hint": "gaz_data",
+                        "edit": {
+                            "mode": "edit"
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 2,
+                                "stop_if_set": false
+                            },
+                            "standard_eas": {},
+                            "standard_geo": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": false,
+                            "nested": false
+                        },
+                        "custom_settings": {},
+                        "inheritance": null
+                    }
+                ]
+            }
+        ]
+    },
+    "keys": {},
+    "version": 1,
+    "format_version": 1
+}

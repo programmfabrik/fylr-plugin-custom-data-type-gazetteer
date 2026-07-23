@@ -1,0 +1,81 @@
+key,de-DE,R,en-US,R,da-DK,R,fi-FI,R,sv-SE,R,fr-FR,R,it-IT,R,es-ES,R,cs-CZ,R,pl-PL,R,ru-RU,R,uz-UZ,R
+custom.data.type.gazeteer.update.error.generic,Fehler beim Suchen nach Gazetteer-Objekten.  Query: %(searchQuery)s.  Fehler: %(error)s,FALSE,Error in search of Gazetteer objects.  Query: %(searchQuery)s.  Error: %(error)s,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazeteer.update.error.invalid-action,action' ungültig: %(action)s,FALSE,Invalid action: %(action)s,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazeteer.update.error.objects-missing,Für Update: Wert 'objects' fehlt,FALSE,For update: key 'objects' missing,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazeteer.update.error.objects-not-array,Für Update: Wert 'objects' muss vom Typ 'array' sein,FALSE,For update: invalid key 'objects': must be an array,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazeteer.update.error.payload-key-missing,%(key)s fehlt in der Payload,FALSE,Missing %(key)s in payload,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazeteer.update.error.payload-missing,Payload fehlt,FALSE,Payload is missing,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.config.field_from.label,Quellfeld,FALSE,Source field,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.config.field_to.label,Zielfeld (vom Typ Gazetteer),FALSE,Target field of type Gazetteer,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.config.field-from-empty-text,Gazetteer ID aus Zielfeld verwenden,FALSE,Same as target field,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.config.objecttype.label,Objekttyp,FALSE,Object type,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.delete.button|icon,fa-trash,FALSE,fa-trash,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.delete.button|text,Löschen,FALSE,Delete,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.detail-map-button|icon,fa-map-o,FALSE,fa-map-o,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.detail-map-button|tooltip,In Karte anzeigen,FALSE,View on map,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.link.button|icon,fa-external-link,FALSE,fa-external-link,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.link.button|text,Externen Link öffnen,FALSE,Open link,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.modify.button|icon,fa-edit,FALSE,fa-edit,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.modify.button|text,Ändern,FALSE,Modify,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.name,Gazetteer,FALSE,Gazetteer,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.name.caster.description,Gazetteer information mit valider ID suchen,FALSE,Searches the Gazetteer information with a valid ID,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.name.caster.name,Feld mit Gazetteer ID,FALSE,Field with Gazetteer ID,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.preview.button|icon,fa-map-o,FALSE,fa-map-o,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.preview.button|text,In Karte anzeigen,FALSE,View on map,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.preview.empty-label,Keine Vorschau verfügbar,FALSE,No preview available.,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.preview.id-not-found,ID existiert nicht,FALSE,ID doesn't exist,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.preview.label,Vorschau,FALSE,Preview,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.search.label,Suche,FALSE,Search,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.search.no-results|text,Keine Ergebnisse gefunden,FALSE,No results found,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.search.placeholder,Suche nach einem Ort mit Name oder ID,FALSE,Search a place by name or ID,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.search.result.md,%(gazId)s - %(prefName.title)s,FALSE,%(gazId)s - %(prefName.title)s,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.administrative-unit.text,Verwaltungseinheit,FALSE,Administrative unit,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.archaeological-area.text,Archäologischer Bereich,FALSE,Archaeological Area,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.archaeological-site.text,Archäologischer Ort,FALSE,Archaeological Site,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.building-institution.text,Standort/Institution,FALSE,Building institution,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.card.show-less-button,Weniger anzeigen,FALSE,Show less,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.card.show-more-button,Mehr anzeigen,FALSE,Show more,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.continent.text,Kontinent,FALSE,Continent,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.hydrography.text,Hydrographie,FALSE,Hydrography,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.landform.text,Landform,FALSE,Landform,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.latitude_longitude.text,Lat: %(lat)s - Lng: %(lng)s,FALSE,Lat: %(lat)s - Lng: %(lng)s,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+custom.data.type.gazetteer.types.populated-place.text,Bewohnter Ort,FALSE,Populated place,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+error.api.gazetteer_insert.object.duplicate,Gazetteer Plugin: Der Gazetteereintrag existiert bereits und kann nicht eingefügt werden.,FALSE,Gazetteer Plugin: The Gazetteer record already exists and can not be inserted.,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+error.server.gazetteer_insert.field_to.not_set,Gazetteer Plugin:  Es wurde kein Zielfeld für generierte Gazetteer-Daten ausgewählt. Wählen Sie ein Zielfeld in den Gazetteer-Einstellungen der Basiskonfiguration aus.,FALSE,Gazetteer Plugin:  No target field for generated Gazetteer data selected. Select a target field in the Gazetteer settings in the base configuration.,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+error.server.gazetteer_insert.objecttype.not_hierarchical,Gazetteer Plugin:  Der gewählte Objekttyp kann nicht für den automatischen Update von Gazetteer-Objekten verwendet werden. Es können nur hierarchische Objekttypen automatisch aktualisiert werden. Wählen Sie einen anderen Objekttyp in den Gazetteer-Einstellungen der Basiskonfiguration aus.,FALSE,Gazetteer Plugin:  The selected object type can not be used for the automatic update of Gazetteer records. Only hierarchical object types can be used for automatic Gazetteer updates. Select another object type in the Gazetteer settings in the base configuration.,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+error.server.gazetteer_insert.objecttype.not_set,Gazetteer Plugin:  Es wurde kein Objekttyp für generierte Gazetteer-Daten ausgewählt. Wählen Sie einen hierarchischen Objekttyp in den Gazetteer-Einstellungen der Basiskonfiguration aus.,FALSE,Gazetteer Plugin:  No object type for generated Gazetteer data selected. Select an object type in the Gazetteer settings in the base configuration.,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.group.system.gazetteer_plugin.introduction,Einstellungen für Custom Data Type Gazetteer,FALSE,Settings for custom data type Gazetteer,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.group.system.gazetteer_plugin.title,Gazetteer,FALSE,Gazetteer,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.group.system.plugin_custom-data-type-gazetteer.introduction,Einstellungen für das Gazetteer-Plugin,FALSE,Settings for the Gazetteer plugin,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.group.system.plugin_custom-data-type-gazetteer.title,Gazetteer,FALSE,Gazetteer,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.name.system.gazetteer_plugin_settings,Automatisches Einfügen von Objekten mit Gazetteer-Feldern,FALSE,Automatic insertion of records with Gazetteer fields,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.name.system.gazetteer_plugin_settings|hint,"Wählen Sie einen hierarchischen Objekttypen sowie Ziel- und Quellfelder, um Gazetteer-Custom-Datatype-Felder zu aktualisieren, und fehlende Elternobjekte automatisch zu erzeugen.
+
+Bitte beachten Sie folgende Einschränkungen:  
+
+* Es können nur Objekttypen ausgewählt werden, die mindestens ein Feld vom Typ Gazetteer (außerhalb von Mehrfachfeldern) besitzen 
+* Der Objekttyp muss hierarchisch sein, um die hierarchische Gazetteer-Struktur abbilden zu können 
+* Es können keine Objekttypen gewählt werden, die Felder mit NOT-NULL- oder Check-Constraints besitzen (abgesehen von Feldern in Mehrfachfeldern, oder dem Zielfeld), da das Plugin die Constraints nicht erfüllen kann  
+
+Weitere Informationen: https://github.com/programmfabrik/fylr-plugin-custom-data-type-gazetteer",FALSE,"Select a hierarchical object type and target & source fields to update Gazetteer custom datatype fields, and automatically create missing parent records.  
+
+Please note the following restrictions:  
+
+* Only object types that have at least one Gazetteer field (outside of nested fields) can be selected. 
+* The object type must be hierarchical to be able to map the hierarchical Gazetteer structure 
+* No object types can be selected that have fields with NOT-NULL or check constraints (except for fields in nested fields, or the target field), because the plugin cannot satisfy the constraints.  
+
+More information: https://github.com/programmfabrik/fylr-plugin-custom-data-type-gazetteer",FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.name.system.update_interval_gazetteer,Automatische Aktualisierung für das Gazetteer Custom Data Type Plugin,FALSE,Automatic updates for the Gazetteer Custom Data Type Plugin,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.name.system.update_interval_gazetteer,Gazetteer Update Einstellungen,FALSE,Gazetteer Update settings,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.enabled.checkbox,Aktiviert,FALSE,Enabled,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.enabled.label,-,FALSE,-,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.on_update.checkbox,Gazetteereinträge auch beim Ändern von Objekten aktualisieren,FALSE,Update Gazetteer info also when editing records,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.on_update.label,-,FALSE,-,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.on_update.label|hint,"Gazetteereinträge in Objekten werden standardmäßig nur beim Anlegen eines Objekts aktualisiert. Aktivieren Sie diese Option, damit die Einträge bei jeder Änderung des Objekts aktualisiert werden.",FALSE,"By default, Gazetteer entries in records are only updated when a record is created. Activate this option so that the entries are updated each time the record is edited.",FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.show_alternative_names.checkbox,Enabled,FALSE,Enabled,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.show_alternative_names.label,Alternative Namen anzeigen,FALSE,Show alternative names,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.show_lat_lng.checkbox,Enabled,FALSE,Enabled,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.gazetteer_plugin_settings.show_lat_lng.label,Breitengrad und Längengrad anzeigen,FALSE,Show latitude and longitude,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.update_interval_gazetteer.days.label,Update alle x Tage durchführen,FALSE,Update every x days,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE
+server.config.parameter.system.update_interval_gazetteer.days.label,Tage zwischen Updates,FALSE,Days between updates,FALSE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE,,TRUE

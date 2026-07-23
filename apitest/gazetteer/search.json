@@ -1,0 +1,1818 @@
+{
+    "result": [
+        {
+            "@id": "https://gazetteer.dainst.org/place/2347833",
+            "gazId": "2347833",
+            "parent": "https://gazetteer.dainst.org/place/2281934",
+            "ancestors": [
+                "https://gazetteer.dainst.org/place/2042932",
+                "https://gazetteer.dainst.org/place/2042600"
+            ],
+            "types": [
+                "populated-place"
+            ],
+            "prefName": {
+                "title": "Hanoi",
+                "language": "deu",
+                "transliterated": true
+            },
+            "names": [
+                {
+                    "title": "Ανόι",
+                    "language": "ell"
+                },
+                {
+                    "title": "Hanói",
+                    "language": "spa"
+                },
+                {
+                    "title": "Ханой",
+                    "language": "rus"
+                },
+                {
+                    "title": "Hanói",
+                    "language": "por"
+                },
+                {
+                    "title": "河內市",
+                    "language": "zho"
+                },
+                {
+                    "title": "Ханој",
+                    "language": "srp"
+                },
+                {
+                    "title": "Hanoi",
+                    "language": "tur"
+                },
+                {
+                    "title": "هانوي",
+                    "language": "ara"
+                },
+                {
+                    "title": "Ha Nội",
+                    "language": "vie"
+                },
+                {
+                    "title": "Hà Nội",
+                    "language": "vie"
+                },
+                {
+                    "title": "Hanoi",
+                    "language": "deu"
+                },
+                {
+                    "title": "Hanoi",
+                    "language": "eng"
+                },
+                {
+                    "title": "Hanoi",
+                    "language": "spa"
+                },
+                {
+                    "title": "Hanoï",
+                    "language": "fra"
+                },
+                {
+                    "title": "Hanoi",
+                    "language": "ita"
+                },
+                {
+                    "title": "Hanoi",
+                    "language": "pol"
+                }
+            ],
+            "prefLocation": {
+                "coordinates": [
+                    105.84117,
+                    21.0245
+                ],
+                "confidence": 0,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "1581130",
+                    "context": "geonames"
+                },
+                {
+                    "value": "4094713-0",
+                    "context": "GND-ID"
+                }
+            ],
+            "links": [
+                {
+                    "object": "http://d-nb.info/gnd/4094713-0",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://sws.geonames.org/1581130",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://sws.geonames.org/1581130",
+                    "predicate": "owl:sameAs"
+                }
+            ],
+            "provenance": [
+                "Propylaeum_GNDID_Import",
+                "geonames"
+            ],
+            "parents": [
+                {
+                    "@id": "https://gazetteer.dainst.org/place/2281934",
+                    "gazId": "2281934",
+                    "parent": "https://gazetteer.dainst.org/place/2042932",
+                    "relatedPlaces": [
+                        "https://gazetteer.dainst.org/place/2379318"
+                    ],
+                    "ancestors": [
+                        "https://gazetteer.dainst.org/place/2042600"
+                    ],
+                    "types": [
+                        "administrative-unit"
+                    ],
+                    "prefName": {
+                        "title": "Vietnam",
+                        "language": "deu"
+                    },
+                    "names": [
+                        {
+                            "title": "Vietname",
+                            "language": "por"
+                        },
+                        {
+                            "title": "Vietnami",
+                            "language": "sqi"
+                        },
+                        {
+                            "title": "Vietnam",
+                            "language": "fra"
+                        },
+                        {
+                            "title": "Socialist Republic of Vietnam",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Vietnam",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Vietnam",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Viet Nam",
+                            "language": "fra"
+                        },
+                        {
+                            "title": "Vietnam",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "Βιετνάμ",
+                            "language": "ell"
+                        },
+                        {
+                            "title": "Vietnam",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "فيتنام",
+                            "language": "ara"
+                        },
+                        {
+                            "title": "Công Hòa Xã Hội Chủ Nghĩa Việt Nam",
+                            "language": "vie"
+                        },
+                        {
+                            "title": "Việt Nam",
+                            "language": "vie"
+                        },
+                        {
+                            "title": "越南",
+                            "language": "zho"
+                        },
+                        {
+                            "title": "Viêt Nam",
+                            "language": "fra"
+                        },
+                        {
+                            "title": "Vietnamia",
+                            "language": "lat"
+                        },
+                        {
+                            "title": "Vietnam",
+                            "language": "tur"
+                        },
+                        {
+                            "title": "Вьетнам",
+                            "language": "rus"
+                        },
+                        {
+                            "title": "Vietnã",
+                            "language": "por"
+                        },
+                        {
+                            "title": "Wietnam",
+                            "language": "pol"
+                        }
+                    ],
+                    "prefLocation": {
+                        "coordinates": [
+                            107.83333,
+                            16.16667
+                        ],
+                        "confidence": 0,
+                        "publicSite": true
+                    },
+                    "identifiers": [
+                        {
+                            "value": "zTopogAsienVietnam",
+                            "context": "zenon-thesaurus"
+                        },
+                        {
+                            "value": "000086389",
+                            "context": "zenon-systemnr"
+                        },
+                        {
+                            "value": "4063514-4",
+                            "context": "GND-ID"
+                        },
+                        {
+                            "value": "1562822",
+                            "context": "geonames"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "object": "http://sws.geonames.org/1562822",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "http://d-nb.info/gnd/4063514-4",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "https://sws.geonames.org/1562822",
+                            "predicate": "owl:sameAs"
+                        }
+                    ],
+                    "tags": [
+                        "AdminLevel0"
+                    ],
+                    "provenance": [
+                        "Propylaeum_GNDID_Import",
+                        "TagImport",
+                        "geonames"
+                    ]
+                },
+                {
+                    "@id": "https://gazetteer.dainst.org/place/2042932",
+                    "gazId": "2042932",
+                    "parent": "https://gazetteer.dainst.org/place/2042600",
+                    "relatedPlaces": [
+                        "https://gazetteer.dainst.org/place/2086604",
+                        "https://gazetteer.dainst.org/place/2043026"
+                    ],
+                    "types": [
+                        "continent"
+                    ],
+                    "prefName": {
+                        "title": "Asien",
+                        "language": "deu"
+                    },
+                    "names": [
+                        {
+                            "title": "Azja",
+                            "language": "pol"
+                        },
+                        {
+                            "title": "Asien",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "Asie",
+                            "language": "fra"
+                        },
+                        {
+                            "title": "آسية",
+                            "language": "ara"
+                        },
+                        {
+                            "title": "Asia",
+                            "language": "lat",
+                            "ancient": true
+                        },
+                        {
+                            "title": "Азия",
+                            "language": "rus"
+                        },
+                        {
+                            "title": "آسیا",
+                            "language": "fas"
+                        }
+                    ],
+                    "prefLocation": {
+                        "coordinates": [
+                            97.910156,
+                            43.882057
+                        ],
+                        "confidence": 0,
+                        "publicSite": true
+                    },
+                    "identifiers": [
+                        {
+                            "value": "zTopogAsien",
+                            "context": "zenon-thesaurus"
+                        },
+                        {
+                            "value": "000039375",
+                            "context": "zenon-systemnr"
+                        },
+                        {
+                            "value": "7736",
+                            "context": "arachne-place"
+                        },
+                        {
+                            "value": "1209812",
+                            "context": "arachne-entity"
+                        },
+                        {
+                            "value": "4003217-6",
+                            "context": "GND-ID"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "object": "https://arachne.dainst.org/entity/1209812",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "http://d-nb.info/gnd/4003217-6",
+                            "predicate": "owl:sameAs"
+                        }
+                    ],
+                    "provenance": [
+                        "geonames",
+                        "Polygonimport"
+                    ]
+                },
+                {
+                    "@id": "https://gazetteer.dainst.org/place/2042600",
+                    "gazId": "2042600",
+                    "prefName": {
+                        "title": "Welt",
+                        "language": "deu"
+                    },
+                    "names": [
+                        {
+                            "title": "Terra",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "Earth",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Erde",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "Земля",
+                            "language": "rus"
+                        },
+                        {
+                            "title": "Il mondo",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "Aarde",
+                            "language": "nld"
+                        },
+                        {
+                            "title": "Γη",
+                            "language": "ell"
+                        },
+                        {
+                            "title": "El mundo",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Tierra",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Tellus",
+                            "language": "lat"
+                        },
+                        {
+                            "title": "Eer",
+                            "language": "nds"
+                        },
+                        {
+                            "title": "Zemja",
+                            "language": "hsb"
+                        }
+                    ],
+                    "prefLocation": {
+                        "coordinates": [
+                            0.0,
+                            0.0
+                        ],
+                        "confidence": 0,
+                        "publicSite": true
+                    },
+                    "identifiers": [
+                        {
+                            "value": "zTopog",
+                            "context": "zenon-thesaurus"
+                        },
+                        {
+                            "value": "000038696",
+                            "context": "zenon-systemnr"
+                        },
+                        {
+                            "value": "1135962553",
+                            "context": "GND-ID"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "object": "http://d-nb.info/gnd/1135962553",
+                            "predicate": "owl:sameAs"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "https://gazetteer.dainst.org/place/2052755",
+            "gazId": "2052755",
+            "parent": "https://gazetteer.dainst.org/place/2052749",
+            "ancestors": [
+                "https://gazetteer.dainst.org/place/2044274",
+                "https://gazetteer.dainst.org/place/2044223",
+                "https://gazetteer.dainst.org/place/2042600"
+            ],
+            "types": [
+                "populated-place"
+            ],
+            "prefName": {
+                "title": "Hamburg",
+                "language": "deu"
+            },
+            "names": [
+                {
+                    "title": "Hamburg",
+                    "language": "vie"
+                },
+                {
+                    "title": "Hamburg",
+                    "language": "tur"
+                },
+                {
+                    "title": "Hambuurich",
+                    "language": "stq"
+                },
+                {
+                    "title": "Hambörg",
+                    "language": "nds"
+                },
+                {
+                    "title": "Hambourg",
+                    "language": "fra"
+                },
+                {
+                    "title": "Wolne i Hanzeatyckie Miasto Hamburg",
+                    "language": "pol"
+                },
+                {
+                    "title": "Hamborg",
+                    "language": "nds"
+                },
+                {
+                    "title": "Гамбург",
+                    "language": "rus"
+                },
+                {
+                    "title": "Hamburgum",
+                    "language": "lat"
+                },
+                {
+                    "title": "Αμβούργο",
+                    "language": "ell"
+                },
+                {
+                    "title": "汉堡市",
+                    "language": "zho"
+                },
+                {
+                    "title": "هامبورگ",
+                    "language": "fas"
+                },
+                {
+                    "title": "Friee un Hansestadt Hamborg",
+                    "language": "nds"
+                },
+                {
+                    "title": "Hamborag",
+                    "language": "frr"
+                },
+                {
+                    "title": "Hamburg",
+                    "language": "deu"
+                },
+                {
+                    "title": "Hamburgu",
+                    "language": "sqi"
+                },
+                {
+                    "title": "Hamburgo",
+                    "language": "por"
+                },
+                {
+                    "title": "Hansestadt Hamburg",
+                    "language": "deu"
+                },
+                {
+                    "title": "המבורג",
+                    "language": "heb"
+                },
+                {
+                    "title": "Augusta Gambriviorum",
+                    "language": "lat"
+                },
+                {
+                    "title": "Freie und Hansestadt Hamburg",
+                    "language": "deu"
+                },
+                {
+                    "title": "Hamborg",
+                    "language": "dan"
+                },
+                {
+                    "title": "Hamburg",
+                    "language": "eng"
+                },
+                {
+                    "title": "Hamborj",
+                    "language": "frr"
+                },
+                {
+                    "title": "Hamborig",
+                    "language": "frr"
+                },
+                {
+                    "title": "هامبورغ",
+                    "language": "ara"
+                },
+                {
+                    "title": "Hamburgo",
+                    "language": "spa"
+                },
+                {
+                    "title": "Amburgo",
+                    "language": "ita"
+                },
+                {
+                    "title": "Hamburg",
+                    "language": "pol"
+                }
+            ],
+            "prefLocation": {
+                "coordinates": [
+                    9.992638,
+                    53.549678
+                ],
+                "confidence": 2,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "1213187",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "1213255",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "2911298",
+                    "context": "geonames"
+                },
+                {
+                    "value": "1204854",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "1047",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "000056619",
+                    "context": "zenon-systemnr"
+                },
+                {
+                    "value": "zTopogEuropMitteDeutsSchleHambuHamburg",
+                    "context": "zenon-thesaurus"
+                },
+                {
+                    "value": "11194",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "11126",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "4023118-5",
+                    "context": "GND-ID"
+                }
+            ],
+            "links": [
+                {
+                    "object": "http://d-nb.info/gnd/4239189-1",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://de.wikipedia.org/wiki/Hamburg",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://arachne.dainst.org/entity/1204854",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://sws.geonames.org/2911298",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://arachne.dainst.org/entity/1213255",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://arachne.dainst.org/entity/1213187",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://d-nb.info/gnd/4023118-5",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://sws.geonames.org/2911298",
+                    "predicate": "owl:sameAs"
+                }
+            ],
+            "provenance": [
+                "geonames",
+                "Propylaeum_GNDID_Import"
+            ],
+            "parents": [
+                {
+                    "@id": "https://gazetteer.dainst.org/place/2044274",
+                    "gazId": "2044274",
+                    "parent": "https://gazetteer.dainst.org/place/2044223",
+                    "relatedPlaces": [
+                        "https://gazetteer.dainst.org/place/2409913",
+                        "https://gazetteer.dainst.org/place/2044248",
+                        "https://gazetteer.dainst.org/place/2044273",
+                        "https://gazetteer.dainst.org/place/2052150",
+                        "https://gazetteer.dainst.org/place/2379500",
+                        "https://gazetteer.dainst.org/place/2773043",
+                        "https://gazetteer.dainst.org/place/2044257"
+                    ],
+                    "ancestors": [
+                        "https://gazetteer.dainst.org/place/2042600"
+                    ],
+                    "types": [
+                        "administrative-unit"
+                    ],
+                    "prefName": {
+                        "title": "Deutschland"
+                    },
+                    "names": [
+                        {
+                            "title": "West Germany",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Federal Republic of Germany",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Gjermania",
+                            "language": "sqi"
+                        },
+                        {
+                            "title": "Germania",
+                            "language": "lat"
+                        },
+                        {
+                            "title": "Almanya",
+                            "language": "tur"
+                        },
+                        {
+                            "title": "Đức",
+                            "language": "vie"
+                        },
+                        {
+                            "title": "德国",
+                            "language": "zho"
+                        },
+                        {
+                            "title": "ألمانيا",
+                            "language": "ara"
+                        },
+                        {
+                            "title": "Allemagne",
+                            "language": "fra"
+                        },
+                        {
+                            "title": "Niemcy",
+                            "language": "pol"
+                        },
+                        {
+                            "title": "Germany",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Duitschland",
+                            "language": ""
+                        },
+                        {
+                            "title": "Alemania",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Γερμανία",
+                            "language": "ell"
+                        },
+                        {
+                            "title": "Deutschland",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "Bundesrepublik Deutschland",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "Germania",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "Alemanha",
+                            "language": "por"
+                        },
+                        {
+                            "title": "Германия",
+                            "language": "rus"
+                        },
+                        {
+                            "title": "Gjermani",
+                            "language": "sqi"
+                        }
+                    ],
+                    "prefLocation": {
+                        "coordinates": [
+                            10.5,
+                            51.5
+                        ],
+                        "confidence": 0,
+                        "publicSite": true
+                    },
+                    "identifiers": [
+                        {
+                            "value": "DE",
+                            "context": "ISO 3166-1 alpha-2"
+                        },
+                        {
+                            "value": "000038865",
+                            "context": "zenon-systemnr"
+                        },
+                        {
+                            "value": "zTopogEuropMitteDeuts",
+                            "context": "zenon-thesaurus"
+                        },
+                        {
+                            "value": "1208766",
+                            "context": "arachne-entity"
+                        },
+                        {
+                            "value": "6680",
+                            "context": "arachne-place"
+                        },
+                        {
+                            "value": "9",
+                            "context": "arachne-place"
+                        },
+                        {
+                            "value": "2921044",
+                            "context": "geonames"
+                        },
+                        {
+                            "value": "8",
+                            "context": "arachne-place"
+                        },
+                        {
+                            "value": "1203911",
+                            "context": "arachne-entity"
+                        },
+                        {
+                            "value": "1203910",
+                            "context": "arachne-entity"
+                        },
+                        {
+                            "value": "4011882-4",
+                            "context": "GND-ID"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "object": "http://d-nb.info/gnd/4011882-4",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "https://arachne.dainst.org/entity/1203911",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "http://sws.geonames.org/2921044",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "https://arachne.dainst.org/entity/1203910",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "https://arachne.dainst.org/entity/1208766",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "https://sws.geonames.org/2921044",
+                            "predicate": "owl:sameAs"
+                        }
+                    ],
+                    "tags": [
+                        "AdminLevel0"
+                    ],
+                    "provenance": [
+                        "Propylaeum_GNDID_Import",
+                        "TagImport",
+                        "geonames"
+                    ]
+                },
+                {
+                    "@id": "https://gazetteer.dainst.org/place/2044223",
+                    "gazId": "2044223",
+                    "parent": "https://gazetteer.dainst.org/place/2042600",
+                    "relatedPlaces": [
+                        "https://gazetteer.dainst.org/place/2086604",
+                        "https://gazetteer.dainst.org/place/2045324"
+                    ],
+                    "types": [
+                        "continent"
+                    ],
+                    "prefName": {
+                        "title": "Europa",
+                        "language": "deu"
+                    },
+                    "names": [
+                        {
+                            "title": "Europe",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "אירופה",
+                            "language": "heb"
+                        },
+                        {
+                            "title": "Ευρώπη",
+                            "language": "ell"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "por"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "nld"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "lat"
+                        },
+                        {
+                            "title": "أوروبا",
+                            "language": "ara"
+                        },
+                        {
+                            "title": "Európa",
+                            "language": "hun"
+                        },
+                        {
+                            "title": "Europe",
+                            "language": "fra"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "nor"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "dan"
+                        },
+                        {
+                            "title": "欧洲",
+                            "language": "zho"
+                        },
+                        {
+                            "title": "Европа",
+                            "language": "bul"
+                        },
+                        {
+                            "title": "Европа",
+                            "language": "rus"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "swe"
+                        },
+                        {
+                            "title": "Avrupa",
+                            "language": "tur"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "유럽",
+                            "language": "kor"
+                        },
+                        {
+                            "title": "ヨーロッパ",
+                            "language": "jpn"
+                        },
+                        {
+                            "title": "Châu Âu",
+                            "language": "vie"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "pol"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "eus"
+                        },
+                        {
+                            "title": "Europa",
+                            "language": "cat"
+                        },
+                        {
+                            "title": "El viejo continente",
+                            "language": "spa"
+                        }
+                    ],
+                    "prefLocation": {
+                        "confidence": 0,
+                        "publicSite": true
+                    },
+                    "identifiers": [
+                        {
+                            "value": "zTopogEurop",
+                            "context": "zenon-thesaurus"
+                        },
+                        {
+                            "value": "7735",
+                            "context": "arachne-place"
+                        },
+                        {
+                            "value": "1209811",
+                            "context": "arachne-entity"
+                        },
+                        {
+                            "value": "000038697",
+                            "context": "zenon-systemnr"
+                        },
+                        {
+                            "value": "6255148",
+                            "context": "geonames"
+                        },
+                        {
+                            "value": "4015701-5",
+                            "context": "GND-ID"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "object": "https://arachne.dainst.org/entity/1209811",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "http://sws.geonames.org/6255148",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "https://sws.geonames.org/6255148",
+                            "predicate": "owl:sameAs"
+                        },
+                        {
+                            "object": "http://d-nb.info/gnd/4015701-5",
+                            "predicate": "owl:sameAs"
+                        }
+                    ],
+                    "provenance": [
+                        "geonames"
+                    ]
+                },
+                {
+                    "@id": "https://gazetteer.dainst.org/place/2042600",
+                    "gazId": "2042600",
+                    "prefName": {
+                        "title": "Welt",
+                        "language": "deu"
+                    },
+                    "names": [
+                        {
+                            "title": "Terra",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "Earth",
+                            "language": "eng"
+                        },
+                        {
+                            "title": "Erde",
+                            "language": "deu"
+                        },
+                        {
+                            "title": "Земля",
+                            "language": "rus"
+                        },
+                        {
+                            "title": "Il mondo",
+                            "language": "ita"
+                        },
+                        {
+                            "title": "Aarde",
+                            "language": "nld"
+                        },
+                        {
+                            "title": "Γη",
+                            "language": "ell"
+                        },
+                        {
+                            "title": "El mundo",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Tierra",
+                            "language": "spa"
+                        },
+                        {
+                            "title": "Tellus",
+                            "language": "lat"
+                        },
+                        {
+                            "title": "Eer",
+                            "language": "nds"
+                        },
+                        {
+                            "title": "Zemja",
+                            "language": "hsb"
+                        }
+                    ],
+                    "prefLocation": {
+                        "coordinates": [
+                            0.0,
+                            0.0
+                        ],
+                        "confidence": 0,
+                        "publicSite": true
+                    },
+                    "identifiers": [
+                        {
+                            "value": "zTopog",
+                            "context": "zenon-thesaurus"
+                        },
+                        {
+                            "value": "000038696",
+                            "context": "zenon-systemnr"
+                        },
+                        {
+                            "value": "1135962553",
+                            "context": "GND-ID"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "object": "http://d-nb.info/gnd/1135962553",
+                            "predicate": "owl:sameAs"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "https://gazetteer.dainst.org/place/2042600",
+            "gazId": "2042600",
+            "prefName": {
+                "title": "Welt",
+                "language": "deu"
+            },
+            "names": [
+                {
+                    "title": "Terra",
+                    "language": "ita"
+                },
+                {
+                    "title": "Earth",
+                    "language": "eng"
+                },
+                {
+                    "title": "Erde",
+                    "language": "deu"
+                },
+                {
+                    "title": "Земля",
+                    "language": "rus"
+                },
+                {
+                    "title": "Il mondo",
+                    "language": "ita"
+                },
+                {
+                    "title": "Aarde",
+                    "language": "nld"
+                },
+                {
+                    "title": "Γη",
+                    "language": "ell"
+                },
+                {
+                    "title": "El mundo",
+                    "language": "spa"
+                },
+                {
+                    "title": "Tierra",
+                    "language": "spa"
+                },
+                {
+                    "title": "Tellus",
+                    "language": "lat"
+                },
+                {
+                    "title": "Eer",
+                    "language": "nds"
+                },
+                {
+                    "title": "Zemja",
+                    "language": "hsb"
+                }
+            ],
+            "prefLocation": {
+                "coordinates": [
+                    0.0,
+                    0.0
+                ],
+                "confidence": 0,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "zTopog",
+                    "context": "zenon-thesaurus"
+                },
+                {
+                    "value": "000038696",
+                    "context": "zenon-systemnr"
+                },
+                {
+                    "value": "1135962553",
+                    "context": "GND-ID"
+                }
+            ],
+            "links": [
+                {
+                    "object": "http://d-nb.info/gnd/1135962553",
+                    "predicate": "owl:sameAs"
+                }
+            ]
+        },
+        {
+            "@id": "https://gazetteer.dainst.org/place/2044223",
+            "gazId": "2044223",
+            "parent": "https://gazetteer.dainst.org/place/2042600",
+            "relatedPlaces": [
+                "https://gazetteer.dainst.org/place/2086604",
+                "https://gazetteer.dainst.org/place/2045324"
+            ],
+            "types": [
+                "continent"
+            ],
+            "prefName": {
+                "title": "Europa",
+                "language": "deu"
+            },
+            "names": [
+                {
+                    "title": "Europe",
+                    "language": "eng"
+                },
+                {
+                    "title": "אירופה",
+                    "language": "heb"
+                },
+                {
+                    "title": "Ευρώπη",
+                    "language": "ell"
+                },
+                {
+                    "title": "Europa",
+                    "language": "por"
+                },
+                {
+                    "title": "Europa",
+                    "language": "nld"
+                },
+                {
+                    "title": "Europa",
+                    "language": "spa"
+                },
+                {
+                    "title": "Europa",
+                    "language": "lat"
+                },
+                {
+                    "title": "أوروبا",
+                    "language": "ara"
+                },
+                {
+                    "title": "Európa",
+                    "language": "hun"
+                },
+                {
+                    "title": "Europe",
+                    "language": "fra"
+                },
+                {
+                    "title": "Europa",
+                    "language": "nor"
+                },
+                {
+                    "title": "Europa",
+                    "language": "dan"
+                },
+                {
+                    "title": "欧洲",
+                    "language": "zho"
+                },
+                {
+                    "title": "Европа",
+                    "language": "bul"
+                },
+                {
+                    "title": "Европа",
+                    "language": "rus"
+                },
+                {
+                    "title": "Europa",
+                    "language": "swe"
+                },
+                {
+                    "title": "Avrupa",
+                    "language": "tur"
+                },
+                {
+                    "title": "Europa",
+                    "language": "deu"
+                },
+                {
+                    "title": "Europa",
+                    "language": "ita"
+                },
+                {
+                    "title": "유럽",
+                    "language": "kor"
+                },
+                {
+                    "title": "ヨーロッパ",
+                    "language": "jpn"
+                },
+                {
+                    "title": "Châu Âu",
+                    "language": "vie"
+                },
+                {
+                    "title": "Europa",
+                    "language": "pol"
+                },
+                {
+                    "title": "Europa",
+                    "language": "eus"
+                },
+                {
+                    "title": "Europa",
+                    "language": "cat"
+                },
+                {
+                    "title": "El viejo continente",
+                    "language": "spa"
+                }
+            ],
+            "prefLocation": {
+                "confidence": 0,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "zTopogEurop",
+                    "context": "zenon-thesaurus"
+                },
+                {
+                    "value": "7735",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "1209811",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "000038697",
+                    "context": "zenon-systemnr"
+                },
+                {
+                    "value": "6255148",
+                    "context": "geonames"
+                },
+                {
+                    "value": "4015701-5",
+                    "context": "GND-ID"
+                }
+            ],
+            "links": [
+                {
+                    "object": "https://arachne.dainst.org/entity/1209811",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://sws.geonames.org/6255148",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://sws.geonames.org/6255148",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://d-nb.info/gnd/4015701-5",
+                    "predicate": "owl:sameAs"
+                }
+            ],
+            "provenance": [
+                "geonames"
+            ]
+        },
+        {
+            "@id": "https://gazetteer.dainst.org/place/2042932",
+            "gazId": "2042932",
+            "parent": "https://gazetteer.dainst.org/place/2042600",
+            "relatedPlaces": [
+                "https://gazetteer.dainst.org/place/2086604",
+                "https://gazetteer.dainst.org/place/2043026"
+            ],
+            "types": [
+                "continent"
+            ],
+            "prefName": {
+                "title": "Asien",
+                "language": "deu"
+            },
+            "names": [
+                {
+                    "title": "Azja",
+                    "language": "pol"
+                },
+                {
+                    "title": "Asien",
+                    "language": "deu"
+                },
+                {
+                    "title": "Asie",
+                    "language": "fra"
+                },
+                {
+                    "title": "آسية",
+                    "language": "ara"
+                },
+                {
+                    "title": "Asia",
+                    "language": "lat",
+                    "ancient": true
+                },
+                {
+                    "title": "Азия",
+                    "language": "rus"
+                },
+                {
+                    "title": "آسیا",
+                    "language": "fas"
+                }
+            ],
+            "prefLocation": {
+                "coordinates": [
+                    97.910156,
+                    43.882057
+                ],
+                "confidence": 0,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "zTopogAsien",
+                    "context": "zenon-thesaurus"
+                },
+                {
+                    "value": "000039375",
+                    "context": "zenon-systemnr"
+                },
+                {
+                    "value": "7736",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "1209812",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "4003217-6",
+                    "context": "GND-ID"
+                }
+            ],
+            "links": [
+                {
+                    "object": "https://arachne.dainst.org/entity/1209812",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://d-nb.info/gnd/4003217-6",
+                    "predicate": "owl:sameAs"
+                }
+            ],
+            "provenance": [
+                "geonames",
+                "Polygonimport"
+            ]
+        },
+        {
+            "@id": "https://gazetteer.dainst.org/place/2044274",
+            "gazId": "2044274",
+            "parent": "https://gazetteer.dainst.org/place/2044223",
+            "relatedPlaces": [
+                "https://gazetteer.dainst.org/place/2409913",
+                "https://gazetteer.dainst.org/place/2044248",
+                "https://gazetteer.dainst.org/place/2044273",
+                "https://gazetteer.dainst.org/place/2052150",
+                "https://gazetteer.dainst.org/place/2379500",
+                "https://gazetteer.dainst.org/place/2773043",
+                "https://gazetteer.dainst.org/place/2044257"
+            ],
+            "ancestors": [
+                "https://gazetteer.dainst.org/place/2042600"
+            ],
+            "types": [
+                "administrative-unit"
+            ],
+            "prefName": {
+                "title": "Deutschland"
+            },
+            "names": [
+                {
+                    "title": "West Germany",
+                    "language": "eng"
+                },
+                {
+                    "title": "Federal Republic of Germany",
+                    "language": "eng"
+                },
+                {
+                    "title": "Gjermania",
+                    "language": "sqi"
+                },
+                {
+                    "title": "Germania",
+                    "language": "lat"
+                },
+                {
+                    "title": "Almanya",
+                    "language": "tur"
+                },
+                {
+                    "title": "Đức",
+                    "language": "vie"
+                },
+                {
+                    "title": "德国",
+                    "language": "zho"
+                },
+                {
+                    "title": "ألمانيا",
+                    "language": "ara"
+                },
+                {
+                    "title": "Allemagne",
+                    "language": "fra"
+                },
+                {
+                    "title": "Niemcy",
+                    "language": "pol"
+                },
+                {
+                    "title": "Germany",
+                    "language": "eng"
+                },
+                {
+                    "title": "Duitschland",
+                    "language": ""
+                },
+                {
+                    "title": "Alemania",
+                    "language": "spa"
+                },
+                {
+                    "title": "Γερμανία",
+                    "language": "ell"
+                },
+                {
+                    "title": "Deutschland",
+                    "language": "deu"
+                },
+                {
+                    "title": "Bundesrepublik Deutschland",
+                    "language": "deu"
+                },
+                {
+                    "title": "Germania",
+                    "language": "ita"
+                },
+                {
+                    "title": "Alemanha",
+                    "language": "por"
+                },
+                {
+                    "title": "Германия",
+                    "language": "rus"
+                },
+                {
+                    "title": "Gjermani",
+                    "language": "sqi"
+                }
+            ],
+            "prefLocation": {
+                "coordinates": [
+                    10.5,
+                    51.5
+                ],
+                "confidence": 0,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "DE",
+                    "context": "ISO 3166-1 alpha-2"
+                },
+                {
+                    "value": "000038865",
+                    "context": "zenon-systemnr"
+                },
+                {
+                    "value": "zTopogEuropMitteDeuts",
+                    "context": "zenon-thesaurus"
+                },
+                {
+                    "value": "1208766",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "6680",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "9",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "2921044",
+                    "context": "geonames"
+                },
+                {
+                    "value": "8",
+                    "context": "arachne-place"
+                },
+                {
+                    "value": "1203911",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "1203910",
+                    "context": "arachne-entity"
+                },
+                {
+                    "value": "4011882-4",
+                    "context": "GND-ID"
+                }
+            ],
+            "links": [
+                {
+                    "object": "http://d-nb.info/gnd/4011882-4",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://arachne.dainst.org/entity/1203911",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://sws.geonames.org/2921044",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://arachne.dainst.org/entity/1203910",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://arachne.dainst.org/entity/1208766",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://sws.geonames.org/2921044",
+                    "predicate": "owl:sameAs"
+                }
+            ],
+            "tags": [
+                "AdminLevel0"
+            ],
+            "provenance": [
+                "Propylaeum_GNDID_Import",
+                "TagImport",
+                "geonames"
+            ]
+        },
+        {
+            "@id": "https://gazetteer.dainst.org/place/2281934",
+            "gazId": "2281934",
+            "parent": "https://gazetteer.dainst.org/place/2042932",
+            "relatedPlaces": [
+                "https://gazetteer.dainst.org/place/2379318"
+            ],
+            "ancestors": [
+                "https://gazetteer.dainst.org/place/2042600"
+            ],
+            "types": [
+                "administrative-unit"
+            ],
+            "prefName": {
+                "title": "Vietnam",
+                "language": "deu"
+            },
+            "names": [
+                {
+                    "title": "Vietname",
+                    "language": "por"
+                },
+                {
+                    "title": "Vietnami",
+                    "language": "sqi"
+                },
+                {
+                    "title": "Vietnam",
+                    "language": "fra"
+                },
+                {
+                    "title": "Socialist Republic of Vietnam",
+                    "language": "eng"
+                },
+                {
+                    "title": "Vietnam",
+                    "language": "eng"
+                },
+                {
+                    "title": "Vietnam",
+                    "language": "spa"
+                },
+                {
+                    "title": "Viet Nam",
+                    "language": "fra"
+                },
+                {
+                    "title": "Vietnam",
+                    "language": "ita"
+                },
+                {
+                    "title": "Βιετνάμ",
+                    "language": "ell"
+                },
+                {
+                    "title": "Vietnam",
+                    "language": "deu"
+                },
+                {
+                    "title": "فيتنام",
+                    "language": "ara"
+                },
+                {
+                    "title": "Công Hòa Xã Hội Chủ Nghĩa Việt Nam",
+                    "language": "vie"
+                },
+                {
+                    "title": "Việt Nam",
+                    "language": "vie"
+                },
+                {
+                    "title": "越南",
+                    "language": "zho"
+                },
+                {
+                    "title": "Viêt Nam",
+                    "language": "fra"
+                },
+                {
+                    "title": "Vietnamia",
+                    "language": "lat"
+                },
+                {
+                    "title": "Vietnam",
+                    "language": "tur"
+                },
+                {
+                    "title": "Вьетнам",
+                    "language": "rus"
+                },
+                {
+                    "title": "Vietnã",
+                    "language": "por"
+                },
+                {
+                    "title": "Wietnam",
+                    "language": "pol"
+                }
+            ],
+            "prefLocation": {
+                "coordinates": [
+                    107.83333,
+                    16.16667
+                ],
+                "confidence": 0,
+                "publicSite": true
+            },
+            "identifiers": [
+                {
+                    "value": "zTopogAsienVietnam",
+                    "context": "zenon-thesaurus"
+                },
+                {
+                    "value": "000086389",
+                    "context": "zenon-systemnr"
+                },
+                {
+                    "value": "4063514-4",
+                    "context": "GND-ID"
+                },
+                {
+                    "value": "1562822",
+                    "context": "geonames"
+                }
+            ],
+            "links": [
+                {
+                    "object": "http://sws.geonames.org/1562822",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "http://d-nb.info/gnd/4063514-4",
+                    "predicate": "owl:sameAs"
+                },
+                {
+                    "object": "https://sws.geonames.org/1562822",
+                    "predicate": "owl:sameAs"
+                }
+            ],
+            "tags": [
+                "AdminLevel0"
+            ],
+            "provenance": [
+                "Propylaeum_GNDID_Import",
+                "TagImport",
+                "geonames"
+            ]
+        }
+    ]
+}

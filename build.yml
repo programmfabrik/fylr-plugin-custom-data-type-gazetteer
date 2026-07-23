@@ -1,0 +1,31 @@
+# Build configuration for fylr-build-plugin — the explicit build description.
+# Delivered files are listed here; "check" (runs with every build) warns when
+# a manifest reference is missing from the build folder.
+# All features: https://github.com/programmfabrik/fylr-build-plugin
+
+server:
+  install:
+    - server
+    - l10n
+
+webfrontend:
+  # CoffeeScript 1.x, compiled + concatenated in this order into
+  # plugin.webfrontend.url (webfrontend/custom-data-type-gazetteer.js)
+  coffee1:
+    - webfrontend/GazetteerUtil.coffee
+    - webfrontend/CustomDataTypeGazetteer.coffee
+    - webfrontend/CasterGazetteer.coffee
+    - webfrontend/CustomBaseConfigGazetteer.coffee
+  scss:
+    - webfrontend/custom-data-type-gazetteer.scss
+  # the webfrontend loads its loca as per-culture JSONs, generated from the CSV
+  l10n_json:
+    - csv: l10n/custom-data-type-gazetteer.csv
+  install:
+    - webfrontend/image
+
+loca:
+  # mastered in the custom-data-types Google Sheet
+  - csv: l10n/custom-data-type-gazetteer.csv
+    sheet: 1-2ZOCrNCTItoSWxTLDd4Fd4qRvdFJxipym00jg2lxl4
+    gid: 0

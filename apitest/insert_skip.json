@@ -1,0 +1,79 @@
+// Records that the plugin must not touch: a record without a Gazetteer ID
+// and an update of an existing record (on_update is disabled).
+[
+    {
+        "name": "POST /api/v1/db/place without a Gazetteer ID is saved unchanged",
+        "request": {
+            "body": [
+                {
+                    "_mask": "_all_fields",
+                    "_objecttype": "place",
+                    "place": {
+                        "_version": 1,
+                        "gaz_id": null
+                    }
+                }
+            ],
+            "endpoint": "db/place",
+            "method": "POST",
+            "query_params": {
+                "format": "long"
+            }
+        },
+        "response": {
+            "statuscode": 200,
+            "body": [
+                {
+                    "place": {
+                        "_version": 1,
+                        "_id_parent": null,
+                        "gaz_id:control": {
+                            "must_not_exist": true
+                        },
+                        "gaz_data:control": {
+                            "must_not_exist": true
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "update of the Hamburg record is not processed, gaz_data stays as sent",
+        "request": {
+            "body": [
+                {
+                    "_mask": "_all_fields",
+                    "_objecttype": "place",
+                    "place": {
+                        "_id": {{ datastore `hamburg_id` }},
+                        "_id_parent": {{ datastore `hamburg_parent_id` }},
+                        "_version": 2,
+                        "gaz_id": "2048564",
+                        "gaz_data": null
+                    }
+                }
+            ],
+            "endpoint": "db/place",
+            "method": "POST",
+            "query_params": {
+                "format": "long"
+            }
+        },
+        "response": {
+            "statuscode": 200,
+            "body": [
+                {
+                    "place": {
+                        "_id": {{ datastore `hamburg_id` }},
+                        "_version": 2,
+                        "gaz_id": "2048564",
+                        "gaz_data:control": {
+                            "must_not_exist": true
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]

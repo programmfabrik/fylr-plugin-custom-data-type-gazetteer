@@ -1,0 +1,46 @@
+// Created Asia (2042932) is the parent of Vietnam.
+[
+    {
+        "name": "created Asia is the parent of Vietnam",
+        "request": {
+            "endpoint": "search",
+            "method": "POST",
+            "body": {
+                "format": "long",
+                "objecttypes": [
+                    "place"
+                ],
+                "search": [
+                    {
+                        "type": "in",
+                        "bool": "must",
+                        "fields": [
+                            "place.gaz_data.gazId"
+                        ],
+                        "in": [
+                            "2042932"
+                        ]
+                    }
+                ]
+            }
+        },
+        "response": {
+            "body": {
+                "count": 1,
+                "objects": [
+                    {
+                        "place": {
+                            "_id": {{ datastore `vietnam_parent_id` }},
+                            "gaz_data": {
+                                "gazId": "2042932"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "store_response_gjson": {
+            "asia_parent_id": "body.objects.0.place._id_parent"
+        }
+    }
+]

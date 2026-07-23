@@ -1,0 +1,20 @@
+{
+    "plugin": {
+        "custom-data-type-gazetteer": {
+            "config": {
+                "gazetteer_api_settings": {
+                    "api_url": "http://localhost:8798"
+                },
+                "gazetteer_plugin_settings": {
+                    "show_alternative_names": false,
+                    "show_lat_lng": false,
+                    "enabled": true,
+                    "objecttype": "place",
+                    "field_from": "place.gaz_id",
+                    "field_to": "place.gaz_data",
+                    "on_update": false
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+// Insert a second record with the Gazetteer ID of Hanoi (2347833). The ID
+// already exists in the hierarchy, the save must be rejected by the plugin.
+[
+    {
+        "name": "POST /api/v1/db/place with a duplicate Gazetteer ID",
+        "request": {
+            "body": [
+                {
+                    "_mask": "_all_fields",
+                    "_objecttype": "place",
+                    "place": {
+                        "_version": 1,
+                        "gaz_id": "2347833"
+                    }
+                }
+            ],
+            "endpoint": "db/place",
+            "method": "POST",
+            "query_params": {
+                "format": "long"
+            }
+        },
+        "response": {
+            "statuscode": 400,
+            "body": {
+                "code": "custom-data-type-gazetteer.gazetteer_insert.object.duplicate"
+            }
+        }
+    }
+]

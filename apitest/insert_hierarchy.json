@@ -1,0 +1,71 @@
+// Insert a record with the Gazetteer ID of Hanoi (2347833) into the empty
+// hierarchy. The plugin must create the whole parent chain over api/v1/db:
+// World (2042600) -> Asia (2042932) -> Vietnam (2281934), and attach the
+// record to Vietnam.
+//
+// The chain is verified in the check_hierarchy_*.json files. The checks walk
+// the tree with stored ids, and stored ids can only be used in later files.
+[
+    {
+        "name": "POST /api/v1/db/place with the Gazetteer ID of Hanoi",
+        "request": {
+            "body": [
+                {
+                    "_mask": "_all_fields",
+                    "_objecttype": "place",
+                    "place": {
+                        "_version": 1,
+                        "gaz_id": "2347833"
+                    }
+                }
+            ],
+            "endpoint": "db/place",
+            "method": "POST",
+            "query_params": {
+                "format": "long"
+            }
+        },
+        "response": {
+            "statuscode": 200,
+            "body": [
+                {
+                    "place": {
+                        "_version": 1,
+                        "gaz_id": "2347833",
+                        "_id_parent:control": {
+                            "is_number": true
+                        },
+                        "gaz_data": {
+                            "gazId": "2347833"
+                        }
+                    }
+                }
+            ]
+        },
+        "store_response_gjson": {
+            "hanoi_id": "body.0.place._id",
+            "hanoi_parent_id": "body.0.place._id_parent"
+        }
+    },
+    {
+        "name": "wait until the record and the 3 created parents are indexed",
+        "request": {
+            "endpoint": "search",
+            "method": "POST",
+            "body": {
+                "format": "short",
+                "objecttypes": [
+                    "place"
+                ],
+                "search": []
+            }
+        },
+        "response": {
+            "body": {
+                "count": 4
+            }
+        },
+        "timeout_ms": 120000,
+        "delay_ms": 1000
+    }
+]

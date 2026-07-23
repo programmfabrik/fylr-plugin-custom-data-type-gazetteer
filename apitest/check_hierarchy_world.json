@@ -1,0 +1,47 @@
+// Created World (2042600) is the parent of Asia and the root of the tree.
+[
+    {
+        "name": "created World is the parent of Asia and the root of the tree",
+        "request": {
+            "endpoint": "search",
+            "method": "POST",
+            "body": {
+                "format": "long",
+                "objecttypes": [
+                    "place"
+                ],
+                "search": [
+                    {
+                        "type": "in",
+                        "bool": "must",
+                        "fields": [
+                            "place.gaz_data.gazId"
+                        ],
+                        "in": [
+                            "2042600"
+                        ]
+                    }
+                ]
+            }
+        },
+        "response": {
+            "body": {
+                "count": 1,
+                "objects": [
+                    {
+                        "place": {
+                            "_id": {{ datastore `asia_parent_id` }},
+                            "_id_parent": null,
+                            "gaz_data": {
+                                "gazId": "2042600"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "store_response_gjson": {
+            "world_id": "body.objects.0.place._id"
+        }
+    }
+]

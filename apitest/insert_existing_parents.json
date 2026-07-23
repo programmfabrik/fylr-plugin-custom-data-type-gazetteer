@@ -1,0 +1,100 @@
+// Insert a record with the Gazetteer ID of Hamburg (2052755). The chain is
+// World (2042600) -> Europe (2044223) -> Germany (2044274). World already
+// exists from the Hanoi insert and must be reused, only Europe and Germany
+// are created.
+//
+// The chain is verified in the check_parents_*.json files. The checks walk
+// the tree with stored ids, and stored ids can only be used in later files.
+[
+    {
+        "name": "POST /api/v1/db/place with the Gazetteer ID of Hamburg",
+        "request": {
+            "body": [
+                {
+                    "_mask": "_all_fields",
+                    "_objecttype": "place",
+                    "place": {
+                        "_version": 1,
+                        "gaz_id": "2052755"
+                    }
+                }
+            ],
+            "endpoint": "db/place",
+            "method": "POST",
+            "query_params": {
+                "format": "long"
+            }
+        },
+        "response": {
+            "statuscode": 200,
+            "body": [
+                {
+                    "place": {
+                        "_version": 1,
+                        "_id_parent:control": {
+                            "is_number": true
+                        },
+                        "gaz_data": {
+                            "gazId": "2052755"
+                        }
+                    }
+                }
+            ]
+        },
+        "store_response_gjson": {
+            "hamburg_id": "body.0.place._id",
+            "hamburg_parent_id": "body.0.place._id_parent"
+        }
+    },
+    {
+        "name": "wait until the record and the 2 created parents are indexed",
+        "request": {
+            "endpoint": "search",
+            "method": "POST",
+            "body": {
+                "format": "short",
+                "objecttypes": [
+                    "place"
+                ],
+                "search": []
+            }
+        },
+        "response": {
+            "body": {
+                "count": 7
+            }
+        },
+        "timeout_ms": 120000,
+        "delay_ms": 1000
+    },
+    {
+        "name": "World was reused and not created a second time",
+        "request": {
+            "endpoint": "search",
+            "method": "POST",
+            "body": {
+                "format": "short",
+                "objecttypes": [
+                    "place"
+                ],
+                "search": [
+                    {
+                        "type": "in",
+                        "bool": "must",
+                        "fields": [
+                            "place.gaz_data.gazId"
+                        ],
+                        "in": [
+                            "2042600"
+                        ]
+                    }
+                ]
+            }
+        },
+        "response": {
+            "body": {
+                "count": 1
+            }
+        }
+    }
+]
