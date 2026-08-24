@@ -9,13 +9,15 @@ server:
     - l10n
 
 webfrontend:
-  # CoffeeScript 1.x, compiled + concatenated in this order into
-  # plugin.webfrontend.url (webfrontend/custom-data-type-gazetteer.js)
-  coffee1:
-    - webfrontend/GazetteerUtil.coffee
-    - webfrontend/CustomDataTypeGazetteer.coffee
-    - webfrontend/CasterGazetteer.coffee
-    - webfrontend/CustomBaseConfigGazetteer.coffee
+  # assembled into plugin.webfrontend.url, in this order:
+  # .coffee is compiled (CoffeeScript 1.x), .scss compiled,
+  # anything else taken verbatim
+  bundles:
+    - sources:
+        - webfrontend/GazetteerUtil.coffee
+        - webfrontend/CustomDataTypeGazetteer.coffee
+        - webfrontend/CasterGazetteer.coffee
+        - webfrontend/CustomBaseConfigGazetteer.coffee
   scss:
     - webfrontend/custom-data-type-gazetteer.scss
   # the webfrontend loads its loca as per-culture JSONs, generated from the CSV
