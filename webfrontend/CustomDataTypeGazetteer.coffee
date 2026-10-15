@@ -105,6 +105,8 @@ class CustomDataTypeGazetteer extends CustomDataType
 	getQueryFieldBadge: (data) =>
 		if data["#{@name()}:unset"]
 			value = $$("text.column.badge.without")
+		else if data["#{@name()}:has_value"]
+			value = $$("field.search.badge.has_value")
 		else
 			value = data[@name()]
 
@@ -120,6 +122,9 @@ class CustomDataTypeGazetteer extends CustomDataType
 			filter._unnest = true
 			filter._unset_filter = true
 			return filter
+
+		if data[key+":has_value"]
+			return @getHasValueFilter(data, key)
 
 		filter = super(data, key)
 		if filter
@@ -146,6 +151,17 @@ class CustomDataTypeGazetteer extends CustomDataType
 					fields: @getFieldNamesForSearch()
 					in: [ str ]
 		filter
+
+	getHasValueFilter: (data, key=@name()) ->
+		if data[key+":has_value"]
+			filter =
+				type: "in"
+				fields: [ @fullName()+".displayName" ]
+				in: [ null ]
+				bool: "must_not"
+			filter._unnest = true
+			filter._has_value_filter = true
+			return filter
 
 	__getFieldNames: ->
 		return [
