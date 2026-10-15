@@ -59,37 +59,26 @@ class CustomDataTypeGazetteer extends CustomDataType
 
 		content = CUI.dom.div()
 		waitBlock = new CUI.WaitBlock(element: content)
+		mapPlugin = (opts.detail?.getPlugins() ? []).find((plugin) => @isPluginSupported(plugin))
 
 		setContent = =>
 			outputFieldElement = @__renderOutput(data: initData)
 			CUI.dom.replace(content, outputFieldElement)
 			waitBlock.destroy()
 
-			if CUI.Map.isValidPosition(initData.position) and opts.detail
-				plugins = opts.detail.getPlugins()
-				for plugin in plugins
-					if plugin instanceof MapDetailPlugin
-						mapPlugin = plugin
-						break
-
-				if mapPlugin
-					mapPlugin.addMarker(position: initData.position, iconName: initData.iconName, iconColor: "#6786ad")
+			if mapPlugin and CUI.Map.isValidPosition(initData.position)
+				mapPlugin.addMarker(position: initData.position, iconName: initData.iconName, iconColor: "#6786ad")
 
 		waitBlock.show()
 		@__fillMissingData(initData).done(setContent)
 
-		plugins = opts.detail?.getPlugins() ? []
-
-		for plugin in plugins
-			if typeof MapDetailPlugin != 'undefined' and plugin instanceof MapDetailPlugin
-				CUI.Events.listen
-					type: "map-detail-click-location"
-					node: content
-					call: (_, info) =>
-						if info.data?.position == initData.position
-							CUI.dom.scrollIntoView(content)
-				break
-
+		if mapPlugin
+			CUI.Events.listen
+				type: "map-detail-click-location"
+				node: content
+				call: (_, info) =>
+					if info.data?.position == initData.position
+						CUI.dom.scrollIntoView(content)
 
 		return content
 
@@ -493,9 +482,8 @@ class CustomDataTypeGazetteer extends CustomDataType
 		else
 			return CUI.resolvedPromise()
 
+	# MapDetailPlugin comes from the detail-map plugin, which may not be installed.
 	isPluginSupported: (plugin) ->
-		if plugin instanceof MapDetailPlugin
-			return true
-		return false
+		return typeof MapDetailPlugin != 'undefined' and plugin instanceof MapDetailPlugin
 
 CustomDataType.register(CustomDataTypeGazetteer)
